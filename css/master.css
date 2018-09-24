@@ -1,9 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+section p:first-of-type {
+  font-size: 120%;
+}
+
+body {
+  background-color: Porcelain;
+  font-family: 'Muli', sans-serif;
+}
+
+@media (min-width: 900px) {
+  .boxup-crime-logo {
+    float: left;
+  }
+
+  .primary-nav a {
+    padding: 10px;
+  }
+}
+
 .primary-nav {
   top: 0;
   left: 0;
   width: 100%;
   text-align: center;
-  background: rgb(255, 0, 0);
+  background: #000000;
+  padding-right: 110px;
+
+}
+
+.primary-nav a {
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+
 }
 
 .prmary-nav ul {
@@ -15,20 +52,12 @@
   display: inline;
 }
 
-.primary-nav a {
-  display: inline-block;
-  padding: 15px;
-  color: black;
-  text-decoration: none;
-}
-
 .primary-nav a:hover {
-  background: rgba(255,255,255,.3);
+  background: rgb(255,0,0);
 }
 
 .boxup-crime-logo {
   float: left;
   margin: 0 0.7857em 0.7857em 0;
   width: auto;
-  
 }
